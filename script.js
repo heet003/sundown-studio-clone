@@ -6,7 +6,7 @@ const scroll = new LocomotiveScroll({
 var loader = document.querySelector("#loader");
 setTimeout(() => {
   loader.style.top = "-100%";
-}, 3000);
+}, 4000);
 
 imageLoader();
 swiperAnimation();
