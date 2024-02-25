@@ -3,11 +3,7 @@ const scroll = new LocomotiveScroll({
   smooth: true,
 });
 
-var loader = document.querySelector("#loader");
-setTimeout(() => {
-  loader.style.top = "-100%";
-}, 4000);
-
+loaderAnimation();
 imageLoader();
 swiperAnimation();
 menuAnimation();
@@ -59,4 +55,11 @@ function menuAnimation() {
       flag = 0;
     }
   });
+}
+
+function loaderAnimation() {
+  var loader = document.querySelector("#loader");
+  setTimeout(() => {
+    loader.style.top = "-100%";
+  }, 4000);
 }
