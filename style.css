@@ -37,6 +37,7 @@ nav {
     width: 100%;
     padding: 2vw 0vw;
     position: relative;
+    z-index: 1001;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -469,27 +470,56 @@ nav h3 {
 #fullscr {
     height: 100vh;
     width: 100%;
-    background-color: #1616167a;
+    background-color: #efeae353;
     position: fixed;
-    z-index: 99;
-    top: 0%;
+    z-index: 1000;
+    top: -200%;
+    transition: all ease 0.5s;
+}
+
+#div1 {
+    height: 50%;
+    background-color: #EFEAE3;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+}
+
+#div1 h4 {
+    font-size: 21vw;
+    text-align: right;
+    transition: all ease 0.5s;
+}
+
+#div1 a:hover {
+    font-size: 22vw;
+    color: #333333;
+    transition: all ease 0.3s;
+}
+
+#div1 a {
+    text-decoration: none;
+    color: #0B0500;
+    font-family: 'neue';
 }
 
 @media (max-width:600px) {
     #page1 {
         width: 100%;
         min-height: 100vh;
-        padding: 0 5vw;
+        padding: 0 0vw;
     }
 
     nav {
-        padding: 8vw 0vw;
+        padding: 8vw 8vw;
+        background-color: #EFEAE3;
         position: relative;
-        z-index: 100;
+        z-index: 1000;
     }
 
     nav img {
         height: 13vw;
+        transition: all ease 0.2s;
     }
 
     #nav-2 {
@@ -504,6 +534,89 @@ nav h3 {
         font-size: 4vw;
         font-family: 'neue';
         font-weight: 100;
-        padding-left: 10vw;
+        padding-left: 5vw;
+    }
+
+    nav h3 img {
+        width: 35px;
+        height: 16px;
+        padding-right: 1vw;
+    }
+
+    #center {
+        font-family: "neue";
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        border-bottom: 1px solid grey;
+        padding-bottom: 2.5vw;
+    }
+    
+    #center h1 {
+        font-size: 12vw;
+        line-height: 9vw;
+        text-align: right;
+    }
+    
+    #left {
+        color: #0B0500;
+        width: 32vw;
+        line-height: 1.9vw;
+        font-weight: 400;
+        font-size: 1.9vw;
+    }
+    
+    #page1 video {
+        position: relative;
+        width: 100%;
+        border-radius: 30px;
+        margin-top: 4vw;
+    }
+    
+    #shapes {
+        width: 46vw;
+        height: 60vh;
+        position: absolute;
+        right: 0;
+        top: 85vh;
+    
+    }
+    
+    #move-1 {
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 20vh;
+        border-bottom-left-radius: 20vh;
+        background-color: #FE330A;
+        position: absolute;
+        filter: blur(10px);
+    }
+    
+    #move-2 {
+        height: 30vw;
+        width: 30vw;
+        border-radius: 50%;
+        background: linear-gradient(#FE330A, rgb(209, 52, 0));
+        position: absolute;
+        filter: blur(25px);
+        animation-name: giggle;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    #move-3 {
+        height: 30vw;
+        width: 30vw;
+        border-radius: 50%;
+        background: linear-gradient(#FE330A, rgb(209, 52, 0));
+        position: absolute;
+        filter: blur(25px);
+        animation-name: wiggle;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
 }
