@@ -472,7 +472,7 @@ nav h3 {
     width: 100%;
     background-color: #efeae353;
     position: fixed;
-    z-index: 1000;
+    z-index: 99;
     top: -200%;
     transition: all ease 0.5s;
 }
@@ -514,7 +514,7 @@ nav h3 {
         padding: 8vw 8vw;
         background-color: #EFEAE3;
         position: relative;
-        z-index: 1000;
+        z-index: 100;
     }
 
     nav img {
@@ -710,4 +710,14 @@ nav h3 {
         font-family: 'neue';
         font-weight: 100;
     }
+}
+
+#loader {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 1s;
 }
