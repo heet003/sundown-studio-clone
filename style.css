@@ -22,12 +22,6 @@ body {
     background-color: #EFEAE3;
 }
 
-#main {
-    background-color: #000;
-    position: relative;
-    z-index: 10;
-}
-
 #page1 {
     width: 100%;
     min-height: 100vh;
@@ -341,8 +335,9 @@ nav {
     position: fixed;
     left: 50%;
     top: 15%;
-    z-index: 9;
-    display: none;
+    z-index: 99;
+    background-color: #000;
+    /* display: none; */
     background-size: cover;
     background-position: center;
 }
