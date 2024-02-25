@@ -351,6 +351,26 @@ nav {
     height: 60vh;
     width: 100%;
     background-color: #EFEAE3;
+    padding: 6vw 2vw;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+
+}
+
+.swiper-slide {
+    padding: 1vw 2vw;
+    font-size: 18px;
+    width: 20%;
+    border-left: 1px solid #383838;
+}
+
+.swiper-slide p {
+    margin: 1vw 0;
+    font-family: 'neue';
+    font-weight: 100;
 }
 
 #page5 {
@@ -362,17 +382,18 @@ nav {
     background-color: #0B0500;
     position: fixed;
     z-index: 9;
-    height: 100vh;
+    height: 105vh;
     width: 100%;
     bottom: 0;
     color: #EFEAE3;
+    padding: 1vw 3vw;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
 }
 
 #footer h1 {
-    font-size: 24vw;
+    font-size: 23vw;
     font-family: 'neue';
 }
 
@@ -380,7 +401,59 @@ nav {
 #footer_div {
     height: 20vh;
     width: 100%;
-    background-color: #FE330A;
+    background-color: #ff512e;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    display: flex;
+}
+
+#footer-nav-links {
+    width: auto;
+    padding: 1vw 3vw;
+}
+
+#footer-nav-links h4 {
+    font-family: 'neue';
+    font-size: 2vw;
+}
+
+#footer-nav-links a {
+    text-decoration: none;
+    color: #EFEAE3;
+}
+
+#footer-form {
+    width: 30%;
+    font-family: 'neue';
+    margin: 2vw 0;
+}
+
+#footer-form form {
+    margin: 1vw 0;
+}
+
+#footer-form input {
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 1.2vw;
+    color: #a2958b;
+    border-bottom: 1px solid #EFEAE3;
+}
+
+#footer-form button {
+    background-image: url('./assets/reshot-icon-arrow-right-GKTFPJDL97.svg');
+    background-repeat: no-repeat;
+    color: transparent;
+    width: 2vw;
+    border-bottom: 1px solid #EFEAE3;
+    height: 1.3vw;
+    border: none;
+    background-color: transparent;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 #footer-bottom {
