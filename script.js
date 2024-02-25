@@ -46,11 +46,11 @@ function menuAnimation() {
   var flag = 0;
   menu.addEventListener("click", () => {
     if (flag == 0) {
-      fullscr.style.top = 0;
+      fullscr.style.top = "0";
       navImage.style.opacity = 0;
       flag = 1;
     } else {
-      fullscr.style.top = "-100%";
+      fullscr.style.top = "-200%";
       navImage.style.opacity = 1;
       flag = 0;
     }
@@ -61,5 +61,5 @@ function loaderAnimation() {
   var loader = document.querySelector("#loader");
   setTimeout(() => {
     loader.style.top = "-100%";
-  }, 4000);
+  }, 400);
 }

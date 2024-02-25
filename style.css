@@ -37,7 +37,7 @@ nav {
     width: 100%;
     padding: 2vw 0vw;
     position: relative;
-    z-index: 1001;
+    z-index: 100 !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,6 +45,9 @@ nav {
 
 nav h3 {
     display: none;
+    position: relative;
+    cursor: pointer;
+    z-index: 101;
 }
 
 #nav-2 {
@@ -486,6 +489,7 @@ nav h3 {
 }
 
 #div1 h4 {
+
     font-size: 21vw;
     transition: all ease 0.5s;
 }
@@ -572,8 +576,6 @@ nav h3 {
     nav {
         padding: 8vw 8vw;
         background-color: #EFEAE3;
-        position: relative;
-        z-index: 100;
     }
 
     nav img {
@@ -587,6 +589,8 @@ nav h3 {
 
     nav h3 {
         display: block;
+        position: relative;
+        z-index: 101 !important;
         padding: 2vw 5vw;
         border: 1px solid #a2958b;
         border-radius: 30px;
