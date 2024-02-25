@@ -19,7 +19,11 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background-color: #EFEAE3;
+}
+
+#main {
+    position: relative;
+    z-index: 10;
 }
 
 #page1 {
@@ -208,14 +212,16 @@ nav {
 }
 
 #moving-text h1 {
-    font-size: 5vw;
+    font-size: 9vw;
+    font-family: 'neue';
+    letter-spacing: 3px;
     display: inline-block;
 
 }
 
 .orange-circle {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
     background-color: #FE330A;
     border-radius: 50px;
@@ -341,3 +347,37 @@ nav {
     background-position: center;
 }
 
+#page4 {
+    height: 60vh;
+    width: 100%;
+    background-color: #EFEAE3;
+}
+
+#page5 {
+    width: 100%;
+    height: 150vh;
+}
+
+#footer {
+    background-color: #0B0500;
+    position: fixed;
+    z-index: 9;
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    color: #EFEAE3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#footer h1 {
+    font-size: 24vw;
+    font-family: 'neue';
+}
+
+#footer-div {
+    height: 20vh;
+    width: 100%;
+    background-color: #FE330A;
+}
