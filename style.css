@@ -336,8 +336,8 @@ nav {
     left: 50%;
     top: 15%;
     z-index: 99;
-    background-color: #000;
-    /* display: none; */
+    display: none;
     background-size: cover;
     background-position: center;
 }
+
