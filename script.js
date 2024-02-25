@@ -66,5 +66,5 @@ function loaderAnimation() {
   var loader = document.querySelector("#loader");
   setTimeout(() => {
     loader.style.top = "-100%";
-  }, 400);
+  }, 4000);
 }
